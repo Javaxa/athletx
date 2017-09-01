@@ -1,3 +1,5 @@
+
+
 function setCookie(name, value, expirySeconds) {
     var expiry = new Date().getTime() + expirySeconds * 1000; // convert seconds to milliseconds
     expiry = new Date(expiry);
@@ -142,5 +144,11 @@ jQuery(document).ready(function ($) {
 
 
 $(".nutritionplanorder").click(function() {
-  $(".nutritionplanorder").toggleClass("active");
+  $(".nutritionplanorder").addClass("active");
+});
+
+$(".window-close-button").click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(".nutritionplanorder").removeClass("active");
 });

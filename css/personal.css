@@ -54,7 +54,7 @@ body.language-en * {
     position: absolute;
     margin: 1vmin;
     font-size: 1em;
-    z-index: 100;
+    z-index: 105;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -121,7 +121,7 @@ a {
   transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateX(-100%);
   left: 60px;
-  z-index: 2;
+  z-index: 103;
 }
 
 .menu1 {
@@ -329,7 +329,7 @@ ul li {
           transition: 1000ms all cubic-bezier(0.19, 1, 0.22, 1);
           transform: translateX(-100%);
           left: 60px;
-          z-index: 20;
+          z-index: 103;
           }
           
           ul {
@@ -935,7 +935,7 @@ body.language-en .focustext {
   color: white;
   position: absolute;
   z-index: 10;
-  left: 65px;
+  left: 60px;
   right: 0;
   margin: auto;
   top: 60px;
@@ -979,7 +979,7 @@ body.language-ge .nutritionfact * {
   margin: auto;
   border-radius: 6px;
   font-size: 1em;
-  left: 65px;
+  left: 60px;
   right: 0;
   bottom: 30px;
   z-index: 11;
@@ -1003,8 +1003,8 @@ body.language-ge .nutritionfact * {
 
 .nutritionplanorder.active {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
   background-color: #0092d3;
   border: solid 2px #359de4;
   color: white;
@@ -1013,8 +1013,9 @@ body.language-ge .nutritionfact * {
   line-height: 5px;
   margin: auto;
   border-radius: 6px;
-  font-size: 1em;
-  left: 65px;
+  font-size: 2em;
+  text-shadow: 4px 4px 7px rgba(0,0,0,0.3);
+  left: 60px;
   right: 0;
   bottom: 30px;
   z-index: 11;
@@ -1024,4 +1025,168 @@ body.language-ge .nutritionfact * {
 	-ms-transition:all 0.1s ease-in-out;
 	transition:all 0.1s ease-in-out;
   box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/*Nutrition consultation insides*/
+
+
+      ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+			   color: #e3e3e3;
+			   text-align: center;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			   color: #e3e3e3;
+			   	text-align: center;
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			   color: #e3e3e3;
+			   	text-align: center;
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			   color: #e3e3e3;
+			   	text-align: center;
+			}
+			::-ms-input-placeholder { /* Microsoft Edge */
+			   color: #e3e3e3;
+			   text-align: center;
+}
+
+.window-close-nutrition {
+    color: white;
+    top: 15px;
+    right: -10px;
+    margin-right: 14px;
+    position: absolute;
+    font-size: 40px;
+    z-index: 101;
+    opacity: 0;
+}
+
+.nutritionplanorder.active .window-close-nutrition {
+      opacity: 1;
+      -moz-transition:all 0.1s ease-in-out;
+    	-webkit-transition:all 0.1s ease-in-out;
+    	-o-transition:all 0.1s ease-in-out;
+    	-ms-transition:all 0.1s ease-in-out;
+    	transition:all 0.1s ease-in-out;
+}
+
+.nutritioninput {
+    position: absolute;
+    opacity: 0;
+    outline: 0;
+    width: 50%;
+    background-color: #007eb7;
+    height: 30px;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 8px;
+    -webkit-box-shadow: inset 0px 0px 11px 1px #14749e;
+    -moz-box-shadow: inset 0px 0px 11px 1px #14749e;
+    box-shadow: inset 0px 0px 11px 1px #14749e;
+}
+
+.nutritionplanorder.active .nutritioninput {
+      opacity: 1;
+      position: relative;
+      -moz-transition:all 0.3s ease-in-out;
+    	-webkit-transition:all 0.3s ease-in-out;
+    	-o-transition:all 0.3s ease-in-out;
+    	-ms-transition:all 0.3s ease-in-out;
+    	transition:all 0.3s ease-in-out;
+}
+
+.nutritiondetails {
+  opacity: 0;
+  position: absolute;
+  bottom: 230px;
+}
+
+.nutritionplanorder.active .nutritiondetails {
+      opacity: 1;
+      position: relative;
+      -moz-transition:all 0.4s ease-in-out;
+    	-webkit-transition:all 0.4s ease-in-out;
+    	-o-transition:all 0.4s ease-in-out;
+    	-ms-transition:all 0.4s ease-in-out;
+    	transition:all 0.4s ease-in-out;
+    	margin-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      bottom: 0px;
+}
+
+.contact-button {
+  position: absolute;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #1483b5;
+  color: white;
+  border: 1px solid #0972a0;
+  padding: 0px;
+  padding-left: 4px;
+  line-height: 5px;
+  box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.contact-button:focus {
+  outline: none;
+}
+
+.contact-button:active {
+  outline: none;
+}
+
+.contact-button:hover {
+  background-color: #3bb0e5;
+}
+
+.contact-button:active {
+  box-shadow: none;
+  top: 2px;
+}
+
+.nutritionplanorder.active .contact-button {
+  margin-top: 45px;
+  position: relative;
+  width: 120px;
+  height: 35px;
+  display: block;
+  -moz-transition:all 0.1s ease-in-out;
+  -webkit-transition:all 0.1s ease-in-out;
+  -o-transition:all 0.1s ease-in-out;
+  -ms-transition:all 0.1s ease-in-out;
+  transition:all 0.1s ease-in-out;
+}
+
+@media only screen and (max-width: 755px) {
+  .nutritionplanorder.active {
+      width: 85%;
+      height: 100%;
+      padding: 25px;
+      border-radius: 6px;
+      font-size: 1.4em;
+      z-index: 100;
+      left: 60px;
+      right: 0;
+      bottom: 0;
+      margin-bottom: 0px;
+      position: fixed;
+    
+  }
+  
+    .nutritionplanorder {
+      width: 210px;
+      height: 40px;
+      padding: 25px;
+      line-height: 5px;
+      border-radius: 6px;
+      font-size: 1em;
+      left: 60px;
+      right: 0;
+      bottom: 10;
+      position: fixed;
+  }
+
 }

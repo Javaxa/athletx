@@ -87,7 +87,8 @@
             "SERVICE_SELECTION": "Services",
             "NUTRITION_HEAD": "There is no Perfect Diet For Everyone.",
             "NUTRITION_DESC": "We are all unique and subtle differences in genetics, body type, culture and environment can affect which type of diet we should eat. Some people do best on a low-carb diet while others may do fine on a vegetarian high-carb diet. The fact is, what works for one person may not work for the next. To figure out what you should do, a little self experimentation may be needed. Try a few different things until you find something that you enjoy and that you think you can stick to. Everything aside, for fast and optimal results <b>Personal Trainers'</b> guidance is nececarry.",
-            "CONSULTATION": "Consult with a Trainer"
+            "CONSULTATION": "Consult with a Trainer",
+            "SEND_NUTRITION": "Send"
         },
         "GE": {
             "INITIALS": "ჯი",
@@ -172,7 +173,8 @@
             "SERVICE_SELECTION": "სერვისები",
             "NUTRITION_HEAD": "იდეალური დიეტა ყველასთვის არ არსებობს.",
             "NUTRITION_DESC": "ჩვენ ყველანი ერთმანეთისაგან განვსხვავდებით. ყველა ჩვენგანის გენეტიკამ, აგებულების ტიპმა, ცხოვრების წესმა თუ გარემოებამ შეიძლება, დიდი გავლენა იქონიოს წონის მატებაზე თუ კლებაზე. ამ პრობლემის გადასაჭრელად აუცილებელია ინდივიდუალურად მორგებული კვების რაციონი. ზოგი შედეგის მისაღწევად დაბალ კალორიულ დიეტას მიმართავს, ზოგი კი მაღალ კალორიულ კვებაზეც შესანიშნავად აღწევს შედეგს. ფაქტი არის ის, რომ ის, რაც ერთისთვის მუშაობს, არ ნიშნავს იმას, რომ სხაზეც გაამართლებს. მაშასადამე, რომ გავარკვიოთ თუ რა იმუშავებს ჩვენთვის საუკეთესოდ, აუცილებელია, ხანგრძლვად დავაკვირდეთ ჩვენი სხეულის რეაქციას ამა თუ იმ საკვებზე ან მივმართოთ ფიტნეს ტრენერს, რომელიც ხანმოკლე დროში შეგვიდგენს კვების გეგმას.",
-            "CONSULTATION": "კონსულტაცია"
+            "CONSULTATION": "კონსულტაცია",
+            "SEND_NUTRITION": "გაგზავნა"
         }
     }
 }
