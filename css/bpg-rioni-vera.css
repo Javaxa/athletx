@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BPG Rioni Vera';
+    src: url('../fonts/bpg-rioni-vera-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/bpg-rioni-vera-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/bpg-rioni-vera-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/bpg-rioni-vera-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/bpg-rioni-vera-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/bpg-rioni-vera-webfont.svg#bpg_rioni_veraregular') format('svg'); /* Legacy iOS */
+}
