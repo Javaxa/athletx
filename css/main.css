@@ -34,6 +34,7 @@ body.language-en * {
     -ms-user-select: text;
     -o-user-select: text;
     user-select: text;
+    cursor: text;
 }
 
 .languageselect {

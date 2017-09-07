@@ -31,6 +31,7 @@ body.language-en * {
     -ms-user-select: text;
     -o-user-select: text;
     user-select: text;
+    cursor: text;
 }
 
 .overlay {
@@ -51,7 +52,7 @@ body.language-en * {
 
 .languageselect {
     color: white;
-    position: absolute;
+    position: fixed;
     margin: 1vmin;
     font-size: 1em;
     z-index: 105;
@@ -157,10 +158,9 @@ ul {
     width: 60px;
     background-color: rgb(55, 87, 121);
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     right: 0;
     top: 0;
-    pointer-events: none;
 }
 
 .blob1 {
@@ -688,12 +688,12 @@ button {
 
 label.price {
   font-weight: 600;
-  right: -3px;
+  right: 2px;
   top: 30px;
   margin-left: 50px;
   position: absolute;
   display: inline-block;
-  width: 70px;
+  width: 65px;
   height: 40px;
   line-height: 40px;
   font-size: 18px;
@@ -1049,7 +1049,7 @@ body.language-ge .nutritionfact * {
 			::-ms-input-placeholder { /* Microsoft Edge */
 			   color: #e3e3e3;
 			   text-align: center;
-}
+      }
 
 .window-close-nutrition {
     color: white;
@@ -1117,7 +1117,7 @@ body.language-ge .nutritionfact * {
       bottom: 0px;
 }
 
-.contact-button {
+.contact-button-nutrition {
   position: absolute;
   margin: auto;
   border-radius: 8px;
@@ -1126,28 +1126,29 @@ body.language-ge .nutritionfact * {
   border: 1px solid #0972a0;
   padding: 0px;
   padding-left: 4px;
-  line-height: 5px;
+  line-height: 40px;
   box-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-weight: 500;
 }
 
-.contact-button:focus {
+.contact-button-nutrition:focus {
   outline: none;
 }
 
-.contact-button:active {
+.contact-button-nutrition:active {
   outline: none;
 }
 
-.contact-button:hover {
+.contact-button-nutrition:hover {
   background-color: #3bb0e5;
 }
 
-.contact-button:active {
+.contact-button-nutrition:active {
   box-shadow: none;
   top: 2px;
 }
 
-.nutritionplanorder.active .contact-button {
+.nutritionplanorder.active .contact-button-nutrition {
   margin-top: 45px;
   position: relative;
   width: 120px;
@@ -1188,5 +1189,4 @@ body.language-ge .nutritionfact * {
       bottom: 10;
       position: fixed;
   }
-
 }

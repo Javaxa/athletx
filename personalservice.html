@@ -1,190 +1,180 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Services</title>
-        <link rel="stylesheet" type="text/css" href="css/personal.css?v=4"/>
-        <link rel="shortcut icon" href="/images/lifter.png">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bpg-nino-mtavruli.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body class="language-en storepage">
-        <!--Language selection-->
-        <div class="languageselect"></div>
 
-                     <a class="mainpagereturn" href="/personaltraining.html"> <div class="fa fa-arrow-left"></div> <span  data-i18n="PAGE_RETURN"><b>Main Page</b></span></a> 
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="css/personal.css?v=4" />
+    <link rel="shortcut icon" href="/images/lifter.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bpg-nino-mtavruli.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-   
+<body class="language-en storepage">
+    <!--Language selection-->
+    <div class="languageselect"></div>
 
+    <a class="mainpagereturn" href="/personaltraining.html">
+        <div class="fa fa-arrow-left"></div> <span data-i18n="PAGE_RETURN"><b>Main Page</b></span></a>
 
-        
-        <!--Sections start-->
-        
-  	  <div class="background-wrap">
-	  	
-	  	
-	  		<video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
-	  			<source src="images/video.mp4" type="video/mp4">
-		  		Video not supported
-	  		
-	  		</video>
-	  
-	  </div>
+    <!--Sections start-->
 
+    <div class="background-wrap">
 
-<div id="menu">
-		<div class="hamburger">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<div class="menu-inner">
-			
-			<ul>
-			    <li class="menusection blanksec"></li>
-				<li class="menusection" onclick="location.href='/personaltraining.html';" data-i18n="PERSONAL_TRAINING_PAGE">Personal Training</li>
-				<li class="menusection" data-i18n="EXPERIENCE_PAGE">Working experience</li>
-				<li class="menusection" data-i18n="GYM_SELECTION_PAGE">Gym selection</li>
-				<li class="menusection" onclick="location.href='/personalnutrition.html';" data-i18n="NUTRITION_SELECTION">Nutrition plan</li>
-				<li class="menusection" data-i18n="WORKOUT_SELECTION">Workout plan</li>
-				<li class="menusection activesec"  onclick="location.href='#';" data-i18n="SERVICE_SELECTION">Services</li>
-			</ul>
-		</div>
-  
-  
-  
-  
+        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="images/video.mp4" type="video/mp4"> Video not supported
 
-  
-		
-		<!--<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        </video>
+
+    </div>
+
+    <div id="menu">
+        <div class="menu-inner">
+
+            <ul>
+                <li class="menusection blanksec"></li>
+                <li class="menusection" onclick="location.href='/personaltraining.html';" data-i18n="PERSONAL_TRAINING_PAGE">Personal Training</li>
+                <li class="menusection" data-i18n="EXPERIENCE_PAGE">Working experience</li>
+                <li class="menusection" data-i18n="GYM_SELECTION_PAGE">Gym selection</li>
+                <li class="menusection" onclick="location.href='/personalnutrition.html';" data-i18n="NUTRITION_SELECTION">Nutrition plan</li>
+                <li class="menusection" data-i18n="WORKOUT_SELECTION">Workout plan</li>
+                <li class="menusection activesec" onclick="location.href='#';" data-i18n="SERVICE_SELECTION">Services</li>
+            </ul>
+        </div>
+
+        <!--<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
 		</svg>-->
-		<div id="blob">
+        <div id="blob">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
 
-		    
-		</div>
-		</div>
+    <!--Sections end-->
 
+</body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="/slimscroll/jquery.slimscroll.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script type="text/javascript" src="js/i18n.js?v=1"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script>
+    $(window).load(function() {
+        var height = window.innerHeight,
+            x = 0,
+            y = height / 2,
+            curveX = 10,
+            curveY = 0,
+            targetX = 0,
+            xitteration = 0,
+            yitteration = 0,
+            menuExpanded = false;
 
+        blob = $('#blob'),
+            blobPath = $('#blob-path'),
 
-      <!--Sections end-->
-        
+            hamburger = $('.hamburger');
 
-    </body>
-    
-    
-    
+        $(this).on('mousemove', function(e) {
+            x = e.pageX;
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script type="text/javascript" src="/slimscroll/jquery.slimscroll.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script type="text/javascript" src="js/i18n.js?v=1"></script>
-    <script src="https://apis.google.com/js/platform.js"></script>
-    <script type="text/javascript" src="js/utils.js"></script>
-    <script>
-      $(window).load(function(){
-	var height = window.innerHeight,
-  x= 0, y= height/2,
-	curveX = 10,
-	curveY = 0,
-	targetX = 0,
-	xitteration = 0,
-	yitteration = 0,
-	menuExpanded = false;
-	
-	blob = $('#blob'),
-	blobPath = $('#blob-path'),
-
-	hamburger = $('.hamburger');
-
-	$(this).on('mousemove', function(e){
-		x = e.pageX;
-		
-		y = e.pageY;
-	});
-
-	$('.hamburger, .menu-inner').on('mouseenter', function(){
-		$(this).parent().addClass('expanded');
-		menuExpanded = true;
-	});
-
-	$('.menu-inner').on('mouseleave', function(){
-		menuExpanded = false;
-		$(this).parent().removeClass('expanded');
-	});
-
-	function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {
-		return changeInValue * (-Math.pow(2, -10 * currentIteration / totalIterations) + 1) + startValue;
-	}
-
-	var hoverZone = 0;
-	var expandAmount = 20;
-	
-	function svgCurve() {
-		if ((curveX > x-1) && (curveX < x+1)) {
-			xitteration = 0;
-		} else {
-			if (menuExpanded) {
-				targetX = 0;
-			} else {
-				xitteration = 0;
-				if (x > hoverZone) {
-					targetX = 0;
-				} else {
-					targetX = -(((60+expandAmount)/100)*(x-hoverZone));
-				}			
-			}
-			xitteration++;
-		}
-
-		if ((curveY > y-1) && (curveY < y+1)) {
-			yitteration = 0;
-		} else {
-			yitteration = 0;
-			yitteration++;	
-		}
-
-		curveX = easeOutExpo(xitteration, curveX, targetX-curveX, 100);
-		curveY = easeOutExpo(yitteration, curveY, y-curveY, 100);
-
-		var anchorDistance = 200;
-		var curviness = anchorDistance - 40;
-
-		var newCurve2 = "M60,"+height+"H0V0h60v"+(curveY-anchorDistance)+"c0,"+curviness+","+curveX+","+curviness+","+curveX+","+anchorDistance+"S60,"+(curveY)+",60,"+(curveY+(anchorDistance*2))+"V"+height+"z";
-
-		blobPath.attr('d', newCurve2);
-		blob.width(curveX+60);
-
-		hamburger.css('transform', 'translate('+curveX+'px, '+curveY+'px)');
-	    $('h2').css('transform', 'translateY('+curveY+'px)');
-	    
-		window.requestAnimationFrame(svgCurve);
-	}
-
-	window.requestAnimationFrame(svgCurve);
-	
-});
-
-
- $(document).ready(function() {
-    $("video").bind("contextmenu",function(){
-        return false;
+            y = e.pageY;
         });
- } );
- 
+
+        if ("ontouchstart" in document) {
+            $(document).on("touchstart", function(e) {
+                var target = $(e.target);
+                e.stopPropagation();
+
+                if (target.closest(".menu-inner").length > 0 || target.closest(".hamburger").length > 0) {
+                    $("#menu").addClass("expanded");
+                    menuExpanded = true;
+                } else if (target.closest("#menu").length === 0) {
+                    $("#menu").removeClass("expanded");
+                    menuExpanded = false;
+                }
+
+                if (target.is("#blob")) {
+                    $("#menu").toggleClass("expanded");
+                }
+            });
+        } else {
+            $('#blob').on('mouseenter', function() {
+                $("#menu").addClass('expanded');
+                menuExpanded = true;
+            });
+
+            $('#menu').on('mouseleave', function() {
+                menuExpanded = false;
+                $("#menu").removeClass('expanded');
+            });
+        }
+
+        function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {
+            return changeInValue * (-Math.pow(2, -10 * currentIteration / totalIterations) + 1) + startValue;
+        }
+
+        var hoverZone = 0;
+        var expandAmount = 20;
+
+        function svgCurve() {
+            if ((curveX > x - 1) && (curveX < x + 1)) {
+                xitteration = 0;
+            } else {
+                if (menuExpanded) {
+                    targetX = 0;
+                } else {
+                    xitteration = 0;
+                    if (x > hoverZone) {
+                        targetX = 0;
+                    } else {
+                        targetX = -(((60 + expandAmount) / 100) * (x - hoverZone));
+                    }
+                }
+                xitteration++;
+            }
+
+            if ((curveY > y - 1) && (curveY < y + 1)) {
+                yitteration = 0;
+            } else {
+                yitteration = 0;
+                yitteration++;
+            }
+
+            curveX = easeOutExpo(xitteration, curveX, targetX - curveX, 100);
+            curveY = easeOutExpo(yitteration, curveY, y - curveY, 100);
+
+            var anchorDistance = 200;
+            var curviness = anchorDistance - 40;
+
+            var newCurve2 = "M60," + height + "H0V0h60v" + (curveY - anchorDistance) + "c0," + curviness + "," + curveX + "," + curviness + "," + curveX + "," + anchorDistance + "S60," + (curveY) + ",60," + (curveY + (anchorDistance * 2)) + "V" + height + "z";
+
+            blobPath.attr('d', newCurve2);
+            blob.width(curveX + 60);
+
+            hamburger.css('transform', 'translate(' + curveX + 'px, ' + curveY + 'px)');
+            $('h2').css('transform', 'translateY(' + curveY + 'px)');
+
+            window.requestAnimationFrame(svgCurve);
+        }
+
+        window.requestAnimationFrame(svgCurve);
+
+    });
+
+    $(document).ready(function() {
+        $("video").bind("contextmenu", function() {
+            return false;
+        });
+    });
 </script>
-    
-    
+
 </html>
-
-
-
-
-
-
-
-
